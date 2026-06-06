@@ -25,7 +25,7 @@ Dự án có thể hiển thị dashboard giám sát đất như hình, với:
 3. Chèn vào README như sau:
 
 ```md
-![Giao diện dashboard](doc/dashboard.png)
+![Giao diện dashboard](image.png)
 ```
 
 > Nếu bạn có ảnh giao diện thực tế, thêm vào `doc/dashboard.png` sẽ làm README sinh động hơn rất nhiều.
