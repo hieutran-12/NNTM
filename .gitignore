@@ -1,0 +1,98 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.python-version
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Packages
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# Distribution / packaging
+*.egg-info/
+*.manifest
+*.spec
+
+# Virtualenv
+.venv/
+
+# Django stuff
+*.log
+local_settings.py
+
+# Flask stuff
+instance/
+.webassets-cache
+
+# env files
+.env
+.env.*
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+npm-shrinkwrap.json
+
+# Build output
+dist/
+build/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local IDE / project files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Arduino/firmware temporary files
+*.hex
+*.bin
+*.elf
+*.ino.cpp
+*.log
+
+# React / frontend caches
+/.cache
+/node_modules
+/public/build
+
+# Misc
+*.swp
+*.tmp
+*.bak
+*.old

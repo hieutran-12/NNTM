@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blockchain Charity Donation System</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, rgba(59,130,246,0.18), transparent 20%),
+                  radial-gradient(circle at bottom right, rgba(167,139,250,0.16), transparent 18%),
+                  #020617;
+    }
+
+    .page {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 40px 24px 60px;
+    }
+
+    .hero {
+      padding: 36px 32px;
+      border-radius: 32px;
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      box-shadow: 0 24px 80px rgba(14, 165, 233, 0.08);
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.6rem, 3.7vw, 4.2rem);
+      margin: 0;
+      letter-spacing: -0.05em;
+    }
+
+    .hero p.subtitle {
+      margin: 18px auto 0;
+      max-width: 760px;
+      font-size: 1.07rem;
+      color: #cbd5e1;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 26px auto 0;
+    }
+
+    .badge-row img {
+      border-radius: 999px;
+      height: 32px;
+    }
+
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(120px, 1fr));
+      gap: 18px;
+      justify-items: center;
+      align-items: center;
+      margin: 28px auto 0;
+      max-width: 540px;
+    }
+
+    .logos img {
+      max-height: 120px;
+      width: auto;
+      border-radius: 22px;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: rgba(30, 41, 59, 0.8);
+      padding: 12px;
+    }
+
+    .section {
+      margin-top: 44px;
+      padding: 28px;
+      border-radius: 28px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      backdrop-filter: blur(12px);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: #eef2ff;
+    }
+
+    .section p,
+    .section li {
+      color: #cbd5e1;
+    }
+
+    .section ul {
+      padding-left: 1.2rem;
+      margin-top: 16px;
+    }
+
+    .poster {
+      display: block;
+      width: 100%;
+      max-width: 900px;
+      border-radius: 24px;
+      border: 1px solid rgba(148, 163, 184, 0.14);
+      margin: 0 auto;
+    }
+
+    .highlight {
+      color: #7dd3fc;
+      font-weight: 600;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 18px;
+      padding: 14px 24px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+    }
+
+    .footer {
+      margin-top: 42px;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 720px) {
+      .hero {
+        padding: 28px 18px;
+      }
+
+      .section {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <h1>Blockchain Charity Donation System</h1>
+      <p class="subtitle">Nền tảng từ thiện phi tập trung giúp minh bạch, tin cậy và trực quan hóa quá trình quyên góp trên blockchain Ethereum.</p>
+      <div class="logos">
+        <div>
+          <img src="doc/anh.jpg" alt="Project logo" />
+        </div>
+        <div>
+          <img src="doc/fitdnu_logo (1).png" alt="FIT DNU logo" />
+        </div>
+      </div>
+      <div class="badge-row">
+        <img src="https://img.shields.io/badge/Blockchain-Ethereum-blue?style=for-the-badge" alt="Ethereum badge" />
+        <img src="https://img.shields.io/badge/Smart%20Contract-Solidity-orange?style=for-the-badge" alt="Solidity badge" />
+        <img src="https://img.shields.io/badge/Web3-DApp-purple?style=for-the-badge" alt="Web3 badge" />
+        <img src="https://img.shields.io/badge/Status-Completed-green?style=for-the-badge" alt="Status badge" />
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🎯 Mục tiêu</h2>
+      <p>Hệ thống hỗ trợ quyên góp minh bạch bằng cách ghi nhận mọi giao dịch lên blockchain, giúp người dùng và nhà tài trợ theo dõi nguồn tiền rõ ràng và giảm rủi ro gian lận.</p>
+      <ul>
+        <li><span class="highlight">Minh bạch</span>: Lịch sử quyên góp và phân phối được lưu trên blockchain.</li>
+        <li><span class="highlight">Tin cậy</span>: Hợp đồng thông minh kiểm soát chặt chẽ luồng quỹ.</li>
+        <li><span class="highlight">Dễ sử dụng</span>: Giao diện web thân thiện cho cả người quyên góp và tổ chức.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>✨ Tính năng chính</h2>
+      <ul>
+        <li>Đăng ký và xác thực người dùng</li>
+        <li>Quyên góp trực tiếp bằng tiền mã hóa</li>
+        <li>Theo dõi chiến dịch, số tiền đã nhận và trạng thái hỗ trợ</li>
+        <li>Chứng thực minh bạch bằng khối chuỗi</li>
+        <li>Hỗ trợ hiển thị đồ họa trong dashboard và báo cáo lịch sử</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>🧱 Cấu trúc dự án</h2>
+      <ul>
+        <li><strong>app/</strong> — Backend Python cho API và xử lý logic</li>
+        <li><strong>frontend/</strong> — Giao diện web React</li>
+        <li><strong>firmware/</strong> — Mã Arduino / ESP8266 nếu có phần tương tác phần cứng</li>
+        <li><strong>requirements.txt</strong> — Thư viện Python cần cài</li>
+        <li><strong>package-lock.json</strong> — Khóa dependency cho frontend</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>🚀 Hướng dẫn nhanh</h2>
+      <p>Để chạy ứng dụng, bạn có thể làm theo các bước cơ bản sau:</p>
+      <ul>
+        <li>Tạo và kích hoạt virtualenv cho Python</li>
+        <li>Cài đặt dependencies với <code>pip install -r requirements.txt</code></li>
+        <li>Khởi động frontend nếu có npm</li>
+        <li>Chạy backend từ <code>app/main.py</code></li>
+      </ul>
+      <p>Nếu cần, tôi có thể viết thêm phần hướng dẫn chi tiết cho cả backend và frontend.</p>
+    </section>
+
+    <section class="section">
+      <h2>📝 Poster & tài liệu</h2>
+      <p>Xem poster dự án và các tài liệu trình bày chi tiết hơn thông qua liên kết bên dưới.</p>
+      <a class="button" href="doc/poster_blockchain.pdf" target="_blank" rel="noreferrer noopener">Xem poster PDF đầy đủ</a>
+      <img class="poster" src="poster.png" alt="Project poster" />
+    </section>
+
+    <div class="footer">
+      <p>Blockchain Charity Donation System • FIT DNU • Thiết kế README đẹp có CSS</p>
+    </div>
+  </div>
+</body>
+</html>
